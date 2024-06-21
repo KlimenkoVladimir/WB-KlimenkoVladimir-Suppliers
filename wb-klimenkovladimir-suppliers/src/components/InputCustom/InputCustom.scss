@@ -1,0 +1,47 @@
+.input {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 12px 16px;
+  color: var(--white);
+  background-color: var(--grey);
+  border-radius: 10px;
+  width: 100%;
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--light-grey);
+  }
+
+  &__field {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+    color: var(--white);
+    background-color: transparent;
+    width: 100%;
+
+    /* Устанавливаем кастомные стили для календаря */
+    &::-webkit-calendar-picker-indicator {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0px; /* Расстояние справа */
+      width: 24px; /* Ширина квадратика */
+      height: 24px; /* Высота квадратика */
+      cursor: pointer; /* Добавляем указатель при наведении */
+      background: transparent;
+      z-index: 2;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+  }
+}

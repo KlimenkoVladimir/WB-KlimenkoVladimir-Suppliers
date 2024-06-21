@@ -1,0 +1,16 @@
+.tag {
+  display: inline;
+  font-size: 11px;
+  padding: 2px 4px;
+  border-radius: 6px;
+
+  &--on-the-way {
+    color: var(--success-300);
+    background-color: var(--success-900);
+  }
+
+  &--delayed {
+    color: var(--warning-300);
+    background-color: var(--warning-900);
+  }
+}

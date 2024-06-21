@@ -1,0 +1,19 @@
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--grey);
+  border-radius: 14px;
+  padding: 5px;
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  &__icon {
+    margin-right: 12px;
+    opacity: 25%;
+  }
+}

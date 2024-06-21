@@ -1,0 +1,10 @@
+.grid-header {
+  display: flex;
+  gap: 24px;
+
+  &__heading {
+    color: var(--white);
+    margin: 0px;
+    margin-right: auto;
+  }
+}

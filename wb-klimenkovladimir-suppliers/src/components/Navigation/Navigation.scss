@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+  gap: 2px;
+  margin-right: auto;
+  padding: 2px;
+  background-color: var(--grey);
+  border-radius: 10px;
+  gap: 2px;
+
+  &__button-wrapper--active {
+    color: var(--ashy);
+    background-color: var(--white);
+  }
+}

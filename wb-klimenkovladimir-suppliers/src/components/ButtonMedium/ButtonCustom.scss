@@ -1,0 +1,42 @@
+.button-custom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  // Size
+  &--medium {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  &--small {
+    padding: 6px;
+  }
+
+  // Color
+  &--grey {
+    color: var(--white);
+    background-color: transparent;
+
+    &:hover {
+      background-color: var(--grey);
+    }
+  }
+
+  &--blue {
+    color: var(--white);
+    background-color: var(--blue);
+
+    &:hover {
+      background-color: var(--dark-blue);
+    }
+  }
+
+  &--white {
+    color: var(--ashy);
+    background-color: var(--white);
+  }
+}

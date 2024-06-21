@@ -1,0 +1,29 @@
+/* color palette */
+:root {
+  --grey: rgba(255, 255, 255, 0.08);
+  --dark-grey: rgba(45, 44, 50, 1);
+  --light-grey: rgba(255, 255, 255, 0.24);
+  --grey-700: rgba(118, 115, 134, 1);
+  --white: rgba(255, 255, 255, 1);
+  --background-plate: rgba(240, 240, 243, 1);
+  --ashy: rgba(45, 44, 50, 1);
+  --text-basic: rgba(0, 0, 0, 1);
+  --blue: rgba(99, 102, 241, 1);
+  --dark-blue: rgba(70, 73, 229, 1);
+  --success-300: rgba(133, 239, 137, 1);
+  --success-900: rgba(20, 83, 43, 1);
+  --warning-300: rgba(253, 177, 114, 1);
+  --warning-900: rgba(124, 61, 18, 1);
+
+  /* Effects */
+  --bg-color-blur: rgb(7 8 9 / 20%);
+  --margin-8: 8px;
+  --padding-4: 4px;
+  --padding-6: 6px;
+  --padding-16: 16px;
+  --border-color-default: rgb(1 91 105 / 40%);
+  --border-radius-100: 100px;
+  --border-radius-8: 8px;
+  --border-radius-16: 16px;
+  --border-radius-32: 32px;
+}

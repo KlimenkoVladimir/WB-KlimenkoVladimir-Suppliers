@@ -1,0 +1,120 @@
+.suppliers-table {
+  color: var(--white);
+  border-spacing: 0 4px;
+  border-collapse: separate;
+
+  &__head {
+    font-size: 13px;
+  }
+
+  &__head-item {
+    text-align: start;
+    padding: 8px;
+  }
+
+  &__row {
+    height: 72px;
+    background-color: var(--grey);
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__item {
+    position: relative;
+    font-size: 16px;
+    height: 72px;
+    padding: 12px 8px;
+    vertical-align: middle;
+
+    &:first-child {
+      border-top-left-radius: 14px;
+      border-bottom-left-radius: 14px;
+      padding-left: 12px;
+    }
+    &:last-child {
+      border-top-right-radius: 14px;
+      border-bottom-right-radius: 14px;
+      padding-right: 12px;
+    }
+  }
+
+  &__address {
+    font-size: 13px;
+    margin-top: 10px;
+    opacity: 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__button {
+    position: relative;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  &__options-container {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    transform: translate(-4px, -6px);
+    color: var(--text-basic);
+    background-color: var(--white);
+    border-radius: 8px;
+    width: 192px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  &__option {
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--background-plate);
+    }
+  }
+
+  &__head-item:first-child,
+  &__item:first-child {
+    width: 100px;
+  }
+
+  &__head-item:nth-child(2),
+  &__item:nth-child(2) {
+    width: 128px;
+  }
+
+  &__head-item:nth-child(3),
+  &__item:nth-child(3) {
+    width: 164px;
+  }
+
+  &__head-item:nth-child(4),
+  &__item:nth-child(4) {
+    width: 146px;
+  }
+
+  &__head-item:nth-child(5),
+  &__item:nth-child(5) {
+    width: 144px;
+  }
+
+  &__head-item:nth-child(6),
+  &__item:nth-child(6) {
+    min-width: 376px;
+  }
+
+  &__head-item:nth-child(7),
+  &__item:nth-child(7) {
+    width: 120px;
+  }
+}
