@@ -15,6 +15,7 @@ import IconCal from "../icons/IconCal";
 const ModalCustom: FC = () => {
   const dispatch: AppDispatch = useDispatch();
   const modal = useSelector((state: RootState) => state.modal);
+  const sortMethod = useSelector((state: RootState) => state.sort.method);
 
   const [formData, setFormData] = useState<Partial<Supplier>>({
     date: null,
@@ -54,7 +55,7 @@ const ModalCustom: FC = () => {
           `http://localhost:4000/suppliers/${modal.id}`,
           formData
         );
-        dispatch(fetchSuppliers());
+        dispatch(fetchSuppliers(sortMethod));
         handleCloseModal();
         return response.data;
       } catch (error) {
@@ -79,7 +80,7 @@ const ModalCustom: FC = () => {
           id: String(currentSuppliersId),
           number: numberSupply,
         });
-        dispatch(fetchSuppliers());
+        dispatch(fetchSuppliers(sortMethod));
         handleCloseModal();
       } catch (error) {
         console.error("Error updating supplier:", error);
